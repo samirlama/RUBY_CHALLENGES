@@ -1,0 +1,19 @@
+$primary-font:'Open Sans', sans-serif;
+$secondary-font:'Dosis', sans-serif;
+$navbar-color:#337ab7; 
+
+.navbar-default .navbar-brand
+{
+	font-family:$secondary-font;
+	font-weight:100;
+	font-size:30px;
+	color:$navbar-color;
+
+
+}
+html,body
+{
+	background:$primary-font;
+}
+
+
