@@ -4,9 +4,15 @@
 	<title>Ideator</title>
 </head>
 <body>
-<% @ideas.each do |idea| %>
-  <h3><%= idea.description %></h3>
-  <h4><%= idea.author %></h4>
-<% end %>	
+	<% @ideas.each do|idea| %>
+		<div class = "panel panel-default">
+			<div class="panel-body">
+				<blockquote>
+				<p> <%= idea.description %></p>
+				<small> <%= idea.author %> </small>
+			</blockquote>
+			</div>	
+		</div>	
+	<% end %>	
 </body>
 </html>
