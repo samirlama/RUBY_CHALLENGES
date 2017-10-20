@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 #Bootstrap JavaScript depends on jQuery. If you're using Rails 5.1+, add the jquery-rails gem to your Gemfile
 gem 'jquery-rails'
+#creating a simple form
+gem 'simple_form'
 #installation of bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
