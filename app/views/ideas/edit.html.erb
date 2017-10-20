@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit</title>
+</head>
+<body>
+	<h1>Revise Ideas</h1>
+	<%= simple_form_for @ideas, method: :patch do |f| %>
+		<%= f.input :description %>
+		<%= f.input :author %>
+		<%= f.submit 'Submit' , class: 'btn btn-primary' %>
+	<% end %>	
+</body>
+</html>

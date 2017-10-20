@@ -4,7 +4,7 @@
 	<title>Ideator</title>
 </head>
 <body>
-	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	<button type="button" class="btn btn-primary btn-lg btn_idea" data-toggle="modal" data-target="#myModal">
   Add Ideas
 </button>
 
@@ -30,6 +30,7 @@
   </div>
 </div>
 	<% @ideas.each do|idea| %>
+		<a href="/ideas/edit">Edit</a>
 			<div class = "panel panel-default">
 			<div class="panel-body">
 				<blockquote>
