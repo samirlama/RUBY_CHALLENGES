@@ -30,15 +30,20 @@
   </div>
 </div>
 	<% @ideas.each do|idea| %>
-		<a href="/ideas/edit">Edit</a>
 			<div class = "panel panel-default">
 			<div class="panel-body">
 				<blockquote>
 				<p> <%= idea.description %></p>
 				<small> <%= idea.author %> </small>
 			</blockquote>
+			<div class="btn-group" role="group">
+				<%= link_to 'Delete', idea_path(idea), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure?"} %>
+        <%= link_to 'Update', edit_idea_path(idea), class: 'btn btn-sm btn-success' %>
+      </div>
+
 			</div>	
 		</div>	
 	<% end %>	
 </body>
 </html>
+        
