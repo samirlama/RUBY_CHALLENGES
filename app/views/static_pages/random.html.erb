@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Ideas</title>
+</head>
+<body>
+	<%= link_to 'Inspire me',random_path,class: 'btn btn-sm btn-primary' %></button>
+
+
+      <div class="panel panel-default" style="margin-top:10px;">
+      	<div class="panel-body">
+      		<blockquote>
+      			<p><%= @ideas.description %></p>
+      			<small><%= @ideas.author %></small>
+      		</blockquote>		
+      <div class="btn-group" role="group">
+      		<%= link_to 'Delete', idea_path(@ideas) , method: :delete , class: 'btn btn-sm btn-danger',data:{confirm:"Are you Sure?"} %>
+      		<%= link_to 'Update',edit_idea_path(@ideas),class: 'btn btn-sm btn-success' %>
+      </div>	
+      	</div>
+      </div>			
+</body>
+</html>

@@ -4,6 +4,8 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+## Gemfile for Rails 3+, Sinatra, and Merb , Pagination
+gem 'will_paginate', '~> 3.1.0'
 #Bootstrap JavaScript depends on jQuery. If you're using Rails 5.1+, add the jquery-rails gem to your Gemfile
 gem 'jquery-rails'
 #creating a simple form
